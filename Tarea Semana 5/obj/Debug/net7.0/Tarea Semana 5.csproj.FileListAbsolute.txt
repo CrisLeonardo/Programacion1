@@ -1,0 +1,15 @@
+C:\Users\minec\Desktop\Programacion1\Tarea Semana 5\bin\Debug\net7.0\Tarea Semana 5.exe
+C:\Users\minec\Desktop\Programacion1\Tarea Semana 5\bin\Debug\net7.0\Tarea Semana 5.deps.json
+C:\Users\minec\Desktop\Programacion1\Tarea Semana 5\bin\Debug\net7.0\Tarea Semana 5.runtimeconfig.json
+C:\Users\minec\Desktop\Programacion1\Tarea Semana 5\bin\Debug\net7.0\Tarea Semana 5.dll
+C:\Users\minec\Desktop\Programacion1\Tarea Semana 5\bin\Debug\net7.0\Tarea Semana 5.pdb
+C:\Users\minec\Desktop\Programacion1\Tarea Semana 5\obj\Debug\net7.0\Tarea Semana 5.csproj.AssemblyReference.cache
+C:\Users\minec\Desktop\Programacion1\Tarea Semana 5\obj\Debug\net7.0\Tarea Semana 5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\minec\Desktop\Programacion1\Tarea Semana 5\obj\Debug\net7.0\Tarea Semana 5.AssemblyInfoInputs.cache
+C:\Users\minec\Desktop\Programacion1\Tarea Semana 5\obj\Debug\net7.0\Tarea Semana 5.AssemblyInfo.cs
+C:\Users\minec\Desktop\Programacion1\Tarea Semana 5\obj\Debug\net7.0\Tarea Semana 5.csproj.CoreCompileInputs.cache
+C:\Users\minec\Desktop\Programacion1\Tarea Semana 5\obj\Debug\net7.0\Tarea Semana 5.dll
+C:\Users\minec\Desktop\Programacion1\Tarea Semana 5\obj\Debug\net7.0\refint\Tarea Semana 5.dll
+C:\Users\minec\Desktop\Programacion1\Tarea Semana 5\obj\Debug\net7.0\Tarea Semana 5.pdb
+C:\Users\minec\Desktop\Programacion1\Tarea Semana 5\obj\Debug\net7.0\Tarea Semana 5.genruntimeconfig.cache
+C:\Users\minec\Desktop\Programacion1\Tarea Semana 5\obj\Debug\net7.0\ref\Tarea Semana 5.dll
