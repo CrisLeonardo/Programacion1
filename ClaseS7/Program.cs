@@ -96,48 +96,108 @@ void catcher()
 
 void Arreglo()
 {
-    //int[] numero = new int[7]; //definimos y creamos el arreglo 
-    ////int suma = 0;
-    ////numero[0] = 45;
-    ////numero[1] = 50;
-    ////numero[2] = 68;
-    ////numero[3] = 70;
-    ////numero[4] = 86;
-    ////numero[5] = 92;
-    ////numero[6] = 69;
-    ////int elementos = numero.Length;
-    ///
-    Random random = new Random();
-    int CanGana = 2;
-    List<string> ganadores = new List<string>();
 
-    int elementos = 10;
-    string[] nombres = new string[elementos];
-    nombres[0] = "Maria";
-    nombres[1] = "Juan";
-    nombres[2] = "Pedro";
-    nombres[3] = "Pepe";
-    nombres[4] = "Bobi";
-    nombres[5] = "Julio";
-    nombres[6] = "Juana";
-    nombres[7] = "Clarence";
-    nombres[8] = "Julian";
-    nombres[9] = "Daniela";
+    
+    Console.Write("Ingrese la cantidad de alumnos que Ingresara:");
+    string input = Console.ReadLine();
 
-    while (ganadores.Count < CanGana)
+    int c = 0;
+
+    if (int.TryParse(input, out c ))
     {
-        int indiceGana = random.Next(nombres.Length);
-        string ganador = nombres[indiceGana];
-        if (!ganadores.Contains(ganador))
+        Console.WriteLine("El número ingresado es: " + c);
+    }
+    else
+    {
+        Console.WriteLine("Entrada inválida. Por favor, ingrese un número entero válido.");
+        return;
+    }
+
+    decimal[] notas = new decimal[c];
+    string[] nombres = new string[c];
+
+    for (int i = 0; i < c; i++)
+    {
+        Console.Write("Ingrese el nombre #" + (i + 1) + ": ");
+        nombres[i] = Console.ReadLine();
+        Console.Write("Ingrese la nota #" + (i + 1) + ": ");
+        notas[i] = decimal.Parse(Console.ReadLine());   
+
+    }
+
+    Console.WriteLine("Los nombres ingresados son:\n ");
+    for (int i = 0; i < c; i++)
+    {
+        Console.Write("Nombre: "+nombres[i]);
+        Console.WriteLine("  Nota:"+notas[i]);
+    }
+
+
+    decimal notaMinima = notas[0];
+    decimal notaMaxima = notas[0];
+    string nombreMinimo = nombres[0];
+    string nombreMaximo = nombres[0];
+
+    for (int i = 1; i < c; i++)
+    {
+        if (notas[i] < notaMinima)
         {
-            ganadores.Add(ganador);
+            notaMinima = notas[i];
+            nombreMinimo = nombres[i];
+        }
+
+        if (notas[i] > notaMaxima)
+        {
+            notaMaxima = notas[i];
+            nombreMaximo = nombres[i];
         }
     }
-    Console.WriteLine("Los ganadores son:");
-    foreach (string ganador in ganadores)
-    {
-        Console.WriteLine(ganador);
-    }
+
+    Console.WriteLine("\nLa calificación más baja es: " + notaMinima + " obtenida por " + nombreMinimo);
+    Console.WriteLine("La calificación más alta es: " + notaMaxima + " obtenida por " + nombreMaximo);
+
+    //int[] numero = new int[c]; //definimos y creamos el arreglo 
+    //int suma = 0;
+    //numero[0] = 45;
+    //numero[1] = 50;
+    //numero[2] = 68;
+    //numero[3] = 70;
+    //numero[4] = 86;
+    //numero[5] = 92;
+    //numero[6] = 69;
+    //int elementos = numero.Length;
+    ///
+    //Random random = new Random();
+    //int CanGana = 2;
+    //List<string> ganadores = new List<string>();
+
+    //int elementos = 10;
+    //string[] nombres = new string[elementos];
+    //nombres[0] = "Maria";
+    //nombres[1] = "Juan";
+    //nombres[2] = "Pedro";
+    //nombres[3] = "Pepe";
+    //nombres[4] = "Bobi";
+    //nombres[5] = "Julio";
+    //nombres[6] = "Juana";
+    //nombres[7] = "Clarence";
+    //nombres[8] = "Julian";
+    //nombres[9] = "Daniela";
+
+    //while (ganadores.Count < CanGana)
+    //{
+    //    int indiceGana = random.Next(nombres.Length);
+    //    string ganador = nombres[indiceGana];
+    //    if (!ganadores.Contains(ganador))
+    //    {
+    //        ganadores.Add(ganador);
+    //    }
+    //}
+    //Console.WriteLine("Los ganadores son:");
+    //foreach (string ganador in ganadores)
+    //{
+    //    Console.WriteLine(ganador);
+}
 
     //int elementosN = nombres.Length;
 
@@ -158,7 +218,7 @@ void Arreglo()
     //Console.WriteLine("numero en posicion 2 = " + numero[2]);
 
 
-}
+//}
 Arreglo();
 //catcher();
 //mayor_menor ();
